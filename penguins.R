@@ -9,4 +9,7 @@ raw_penguin_data =
 
 cleaned_penguin_data =
   clean_names(raw_penguin_data) |>
-  rename("egg_date" = "date_egg")
+  rename(
+    "egg_date" = "date_egg",
+    "study_id" = "study_name"
+  )
